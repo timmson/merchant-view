@@ -16,6 +16,7 @@
 		5A0F0B212928CFEF0072E1EF /* merchant_viewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B202928CFEF0072E1EF /* merchant_viewTests.swift */; };
 		5A0F0B2B2928CFEF0072E1EF /* merchant_viewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B2A2928CFEF0072E1EF /* merchant_viewUITests.swift */; };
 		5A0F0B2D2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */; };
+		5AD01F4E2928EA4100B1CC4A /* WebWiew.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD01F4D2928EA4100B1CC4A /* WebWiew.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5A0F0B262928CFEF0072E1EF /* merchant-viewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "merchant-viewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F0B2A2928CFEF0072E1EF /* merchant_viewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewUITests.swift; sourceTree = "<group>"; };
 		5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5AD01F4D2928EA4100B1CC4A /* WebWiew.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebWiew.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5A0F0B122928CFEF0072E1EF /* Assets.xcassets */,
 				5A0F0B142928CFEF0072E1EF /* LaunchScreen.storyboard */,
 				5A0F0B172928CFEF0072E1EF /* Info.plist */,
+				5AD01F4D2928EA4100B1CC4A /* WebWiew.storyboard */,
 			);
 			path = "merchant-view";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				5A0F0B162928CFEF0072E1EF /* LaunchScreen.storyboard in Resources */,
 				5A0F0B132928CFEF0072E1EF /* Assets.xcassets in Resources */,
 				5A0F0B112928CFEE0072E1EF /* Main.storyboard in Resources */,
+				5AD01F4E2928EA4100B1CC4A /* WebWiew.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
