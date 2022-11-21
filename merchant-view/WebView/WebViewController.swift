@@ -2,17 +2,21 @@
 //  WebViewController.swift
 //  merchant-view
 //
-//  Created by Artem Krotov on 19.11.2022.
+//  Created by Artem Krotov on 21.11.2022.
 //
 
 import UIKit
 import WebKit
 
-class MyWebViewController: UIViewController {
+class WebViewController : UIViewController {
     
-    var url: String = "https://ya.ru"
+    private var url: String = "https://ya.ru"
     
     @IBOutlet weak var webView: WKWebView!
+    
+    func setURL(url: String) {
+        self.url = url
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,5 +26,4 @@ class MyWebViewController: UIViewController {
         webView.load(request)
     }
     
-
 }

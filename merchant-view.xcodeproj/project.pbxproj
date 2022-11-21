@@ -16,9 +16,9 @@
 		5A0F0B212928CFEF0072E1EF /* merchant_viewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B202928CFEF0072E1EF /* merchant_viewTests.swift */; };
 		5A0F0B2B2928CFEF0072E1EF /* merchant_viewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B2A2928CFEF0072E1EF /* merchant_viewUITests.swift */; };
 		5A0F0B2D2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */; };
+		5A11CA6B292BF98300330503 /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A11CA6A292BF98300330503 /* WebViewController.storyboard */; };
+		5A11CA6E292BF9D500330503 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA6D292BF9D500330503 /* WebViewController.swift */; };
 		5AD01F53292900D400B1CC4A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD01F52292900D400B1CC4A /* WebKit.framework */; };
-		5AD01F55292901D100B1CC4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD01F54292901D100B1CC4A /* Constants.swift */; };
-		5AD01F57292912EE00B1CC4A /* MyWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD01F56292912EE00B1CC4A /* MyWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		5A0F0B262928CFEF0072E1EF /* merchant-viewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "merchant-viewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F0B2A2928CFEF0072E1EF /* merchant_viewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewUITests.swift; sourceTree = "<group>"; };
 		5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5A11CA6A292BF98300330503 /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
+		5A11CA6D292BF9D500330503 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		5AD01F52292900D400B1CC4A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		5AD01F54292901D100B1CC4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		5AD01F56292912EE00B1CC4A /* MyWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,15 +107,10 @@
 		5A0F0B082928CFEE0072E1EF /* merchant-view */ = {
 			isa = PBXGroup;
 			children = (
-				5A0F0B092928CFEE0072E1EF /* AppDelegate.swift */,
-				5A0F0B0B2928CFEE0072E1EF /* SceneDelegate.swift */,
-				5A0F0B0D2928CFEE0072E1EF /* ViewController.swift */,
-				5A0F0B0F2928CFEE0072E1EF /* Main.storyboard */,
-				5AD01F56292912EE00B1CC4A /* MyWebViewController.swift */,
-				5A0F0B122928CFEF0072E1EF /* Assets.xcassets */,
-				5A0F0B142928CFEF0072E1EF /* LaunchScreen.storyboard */,
-				5A0F0B172928CFEF0072E1EF /* Info.plist */,
-				5AD01F54292901D100B1CC4A /* Constants.swift */,
+				5A11CA69292BF94000330503 /* WebView */,
+				5A11CA68292BF77B00330503 /* Main */,
+				5A11CA67292BF6D700330503 /* Resources */,
+				5A11CA65292BF6B600330503 /* Application */,
 			);
 			path = "merchant-view";
 			sourceTree = "<group>";
@@ -135,6 +130,43 @@
 				5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */,
 			);
 			path = "merchant-viewUITests";
+			sourceTree = "<group>";
+		};
+		5A11CA65292BF6B600330503 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5A0F0B092928CFEE0072E1EF /* AppDelegate.swift */,
+				5A0F0B0B2928CFEE0072E1EF /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5A11CA67292BF6D700330503 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A0F0B122928CFEF0072E1EF /* Assets.xcassets */,
+				5A0F0B142928CFEF0072E1EF /* LaunchScreen.storyboard */,
+				5A0F0B172928CFEF0072E1EF /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A11CA68292BF77B00330503 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5A0F0B0D2928CFEE0072E1EF /* ViewController.swift */,
+				5A0F0B0F2928CFEE0072E1EF /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5A11CA69292BF94000330503 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				5A11CA6A292BF98300330503 /* WebViewController.storyboard */,
+				5A11CA6D292BF9D500330503 /* WebViewController.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		5AD01F51292900D400B1CC4A /* Frameworks */ = {
@@ -251,6 +283,7 @@
 			files = (
 				5A0F0B162928CFEF0072E1EF /* LaunchScreen.storyboard in Resources */,
 				5A0F0B132928CFEF0072E1EF /* Assets.xcassets in Resources */,
+				5A11CA6B292BF98300330503 /* WebViewController.storyboard in Resources */,
 				5A0F0B112928CFEE0072E1EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AD01F55292901D100B1CC4A /* Constants.swift in Sources */,
+				5A11CA6E292BF9D500330503 /* WebViewController.swift in Sources */,
 				5A0F0B0E2928CFEE0072E1EF /* ViewController.swift in Sources */,
 				5A0F0B0A2928CFEE0072E1EF /* AppDelegate.swift in Sources */,
-				5AD01F57292912EE00B1CC4A /* MyWebViewController.swift in Sources */,
 				5A0F0B0C2928CFEE0072E1EF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "merchant-view/Info.plist";
+				INFOPLIST_FILE = "merchant-view/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Merhcant View";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -487,7 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "merchant-view/Info.plist";
+				INFOPLIST_FILE = "merchant-view/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Merhcant View";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
