@@ -9,36 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //MARK: - Private
+    private let router: MainRouter = Router.shared
+    
+    //MARK: - Outlets
     @IBOutlet weak var urlField: UITextView!
     
+    //MARK: - Actions
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    
-    //MARK: - Private
-    private func createController(name: String) -> UIViewController {
-        let storyBoard = UIStoryboard(name: name, bundle: nil)
-        return storyBoard.instantiateViewController(withIdentifier: name)
-    }
-    
-    private func goToWebViewController() {
-        let webVc = createController(name: "WebViewController") as! WebViewController
-        webVc.setURL(url: urlField.text)
-        navigationController?.pushViewController(webVc, animated: true)
-    }
-    
-    
-    //MARK: - Actions
     @IBAction func didTapOpenButton() {
-        goToWebViewController()
+        let params: WebViewParameters = WebViewParameters(url: urlField.text)
+        router.showWebView(viewController: self, params: params)
     }
     
-    @IBAction func didReturnOnTextView(textField: UITextView) {
-        
-    }
-    
-
 
 }
 

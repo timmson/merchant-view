@@ -10,18 +10,17 @@ import WebKit
 
 class WebViewController : UIViewController {
     
-    private var url: String = "https://ya.ru"
-    
+    //MARK: Outlets
     @IBOutlet weak var webView: WKWebView!
     
-    func setURL(url: String) {
-        self.url = url
-    }
+    //MARK: private
+    var params: WebViewParameters?
+    let defaultParams = WebViewParameters(url: "https://ya.ru")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        guard let url = URL(string: url) else {return}
+        
+        guard let url = URL(string: (params ?? defaultParams).url) else {return}
         let request = URLRequest(url: url)
         webView.load(request)
     }

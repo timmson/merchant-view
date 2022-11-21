@@ -18,6 +18,9 @@
 		5A0F0B2D2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */; };
 		5A11CA6B292BF98300330503 /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A11CA6A292BF98300330503 /* WebViewController.storyboard */; };
 		5A11CA6E292BF9D500330503 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA6D292BF9D500330503 /* WebViewController.swift */; };
+		5A11CA71292C093000330503 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA70292C093000330503 /* Router.swift */; };
+		5A11CA73292C0E4400330503 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA72292C0E4400330503 /* MainRouter.swift */; };
+		5A11CA76292C0EAE00330503 /* WebViewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA75292C0EAE00330503 /* WebViewParameters.swift */; };
 		5AD01F53292900D400B1CC4A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD01F52292900D400B1CC4A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A11CA6A292BF98300330503 /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
 		5A11CA6D292BF9D500330503 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5A11CA70292C093000330503 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		5A11CA72292C0E4400330503 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		5A11CA75292C0EAE00330503 /* WebViewParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewParameters.swift; sourceTree = "<group>"; };
 		5AD01F52292900D400B1CC4A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -107,6 +113,7 @@
 		5A0F0B082928CFEE0072E1EF /* merchant-view */ = {
 			isa = PBXGroup;
 			children = (
+				5A11CA6F292C092700330503 /* Router */,
 				5A11CA69292BF94000330503 /* WebView */,
 				5A11CA68292BF77B00330503 /* Main */,
 				5A11CA67292BF6D700330503 /* Resources */,
@@ -163,10 +170,20 @@
 		5A11CA69292BF94000330503 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				5A11CA75292C0EAE00330503 /* WebViewParameters.swift */,
 				5A11CA6A292BF98300330503 /* WebViewController.storyboard */,
 				5A11CA6D292BF9D500330503 /* WebViewController.swift */,
 			);
 			path = WebView;
+			sourceTree = "<group>";
+		};
+		5A11CA6F292C092700330503 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5A11CA70292C093000330503 /* Router.swift */,
+				5A11CA72292C0E4400330503 /* MainRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		5AD01F51292900D400B1CC4A /* Frameworks */ = {
@@ -311,8 +328,11 @@
 			files = (
 				5A11CA6E292BF9D500330503 /* WebViewController.swift in Sources */,
 				5A0F0B0E2928CFEE0072E1EF /* ViewController.swift in Sources */,
+				5A11CA76292C0EAE00330503 /* WebViewParameters.swift in Sources */,
+				5A11CA71292C093000330503 /* Router.swift in Sources */,
 				5A0F0B0A2928CFEE0072E1EF /* AppDelegate.swift in Sources */,
 				5A0F0B0C2928CFEE0072E1EF /* SceneDelegate.swift in Sources */,
+				5A11CA73292C0E4400330503 /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
