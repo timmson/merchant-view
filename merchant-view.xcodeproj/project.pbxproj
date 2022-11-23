@@ -13,7 +13,6 @@
 		5A0F0B112928CFEE0072E1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F0B0F2928CFEE0072E1EF /* Main.storyboard */; };
 		5A0F0B132928CFEF0072E1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F0B122928CFEF0072E1EF /* Assets.xcassets */; };
 		5A0F0B162928CFEF0072E1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F0B142928CFEF0072E1EF /* LaunchScreen.storyboard */; };
-		5A0F0B212928CFEF0072E1EF /* merchant_viewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B202928CFEF0072E1EF /* merchant_viewTests.swift */; };
 		5A0F0B2B2928CFEF0072E1EF /* merchant_viewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B2A2928CFEF0072E1EF /* merchant_viewUITests.swift */; };
 		5A0F0B2D2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */; };
 		5A11CA6B292BF98300330503 /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A11CA6A292BF98300330503 /* WebViewController.storyboard */; };
@@ -21,6 +20,7 @@
 		5A11CA71292C093000330503 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA70292C093000330503 /* Router.swift */; };
 		5A11CA73292C0E4400330503 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA72292C0E4400330503 /* MainRouter.swift */; };
 		5A11CA76292C0EAE00330503 /* WebViewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA75292C0EAE00330503 /* WebViewParameters.swift */; };
+		5ACEB185292EC53B007465DC /* MainRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACEB184292EC53B007465DC /* MainRouterTest.swift */; };
 		5AD01F53292900D400B1CC4A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD01F52292900D400B1CC4A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,6 @@
 		5A0F0B152928CFEF0072E1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0F0B172928CFEF0072E1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A0F0B1C2928CFEF0072E1EF /* merchant-viewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "merchant-viewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A0F0B202928CFEF0072E1EF /* merchant_viewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewTests.swift; sourceTree = "<group>"; };
 		5A0F0B262928CFEF0072E1EF /* merchant-viewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "merchant-viewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F0B2A2928CFEF0072E1EF /* merchant_viewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewUITests.swift; sourceTree = "<group>"; };
 		5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -60,6 +59,8 @@
 		5A11CA70292C093000330503 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5A11CA72292C0E4400330503 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		5A11CA75292C0EAE00330503 /* WebViewParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewParameters.swift; sourceTree = "<group>"; };
+		5ACEB184292EC53B007465DC /* MainRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterTest.swift; sourceTree = "<group>"; };
+		5ACEB188292EC7D4007465DC /* merchant-view.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "merchant-view.xctestplan"; sourceTree = "<group>"; };
 		5AD01F52292900D400B1CC4A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -125,7 +126,8 @@
 		5A0F0B1F2928CFEF0072E1EF /* merchant-viewTests */ = {
 			isa = PBXGroup;
 			children = (
-				5A0F0B202928CFEF0072E1EF /* merchant_viewTests.swift */,
+				5ACEB188292EC7D4007465DC /* merchant-view.xctestplan */,
+				5ACEB181292EC4B3007465DC /* RouterTests */,
 			);
 			path = "merchant-viewTests";
 			sourceTree = "<group>";
@@ -184,6 +186,14 @@
 				5A11CA72292C0E4400330503 /* MainRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		5ACEB181292EC4B3007465DC /* RouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				5ACEB184292EC53B007465DC /* MainRouterTest.swift */,
+			);
+			path = RouterTests;
 			sourceTree = "<group>";
 		};
 		5AD01F51292900D400B1CC4A /* Frameworks */ = {
@@ -340,7 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A0F0B212928CFEF0072E1EF /* merchant_viewTests.swift in Sources */,
+				5ACEB185292EC53B007465DC /* MainRouterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

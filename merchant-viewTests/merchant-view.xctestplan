@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "5CCD18A7-4F80-4950-9A6F-542E30A423DA",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:merchant-view.xcodeproj",
+      "identifier" : "5A0F0B052928CFEE0072E1EF",
+      "name" : "merchant-view"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:merchant-view.xcodeproj",
+        "identifier" : "5A0F0B1B2928CFEF0072E1EF",
+        "name" : "merchant-viewTests"
+      }
+    }
+  ],
+  "version" : 1
+}
