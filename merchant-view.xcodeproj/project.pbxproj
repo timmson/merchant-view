@@ -15,13 +15,18 @@
 		5A0F0B162928CFEF0072E1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F0B142928CFEF0072E1EF /* LaunchScreen.storyboard */; };
 		5A0F0B2B2928CFEF0072E1EF /* merchant_viewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B2A2928CFEF0072E1EF /* merchant_viewUITests.swift */; };
 		5A0F0B2D2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */; };
-		5A11CA6B292BF98300330503 /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A11CA6A292BF98300330503 /* WebViewController.storyboard */; };
 		5A11CA6E292BF9D500330503 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA6D292BF9D500330503 /* WebViewController.swift */; };
 		5A11CA71292C093000330503 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA70292C093000330503 /* Router.swift */; };
 		5A11CA73292C0E4400330503 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA72292C0E4400330503 /* MainRouter.swift */; };
 		5A11CA76292C0EAE00330503 /* WebViewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11CA75292C0EAE00330503 /* WebViewParameters.swift */; };
 		5ACEB185292EC53B007465DC /* MainRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACEB184292EC53B007465DC /* MainRouterTest.swift */; };
 		5AD01F53292900D400B1CC4A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD01F52292900D400B1CC4A /* WebKit.framework */; };
+		5ADCC41D294E6A6300F1A184 /* WebViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC41C294E6A6300F1A184 /* WebViewView.swift */; };
+		5ADCC41F294E7ED200F1A184 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC41E294E7ED200F1A184 /* MainView.swift */; };
+		5ADCC422294E7F1B00F1A184 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC421294E7F1B00F1A184 /* BaseView.swift */; };
+		5ADCC424294E81EE00F1A184 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC423294E81EE00F1A184 /* Errors.swift */; };
+		5ADCC426294E84D000F1A184 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC425294E84D000F1A184 /* BaseController.swift */; };
+		5ADCC428294E916300F1A184 /* BaseParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC427294E916300F1A184 /* BaseParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +59,6 @@
 		5A0F0B262928CFEF0072E1EF /* merchant-viewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "merchant-viewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F0B2A2928CFEF0072E1EF /* merchant_viewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewUITests.swift; sourceTree = "<group>"; };
 		5A0F0B2C2928CFEF0072E1EF /* merchant_viewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant_viewUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5A11CA6A292BF98300330503 /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
 		5A11CA6D292BF9D500330503 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		5A11CA70292C093000330503 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5A11CA72292C0E4400330503 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -62,6 +66,12 @@
 		5ACEB184292EC53B007465DC /* MainRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterTest.swift; sourceTree = "<group>"; };
 		5ACEB188292EC7D4007465DC /* merchant-view.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "merchant-view.xctestplan"; sourceTree = "<group>"; };
 		5AD01F52292900D400B1CC4A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5ADCC41C294E6A6300F1A184 /* WebViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewView.swift; sourceTree = "<group>"; };
+		5ADCC41E294E7ED200F1A184 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5ADCC421294E7F1B00F1A184 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		5ADCC423294E81EE00F1A184 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		5ADCC425294E84D000F1A184 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		5ADCC427294E916300F1A184 /* BaseParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,7 @@
 		5A0F0B082928CFEE0072E1EF /* merchant-view */ = {
 			isa = PBXGroup;
 			children = (
+				5ADCC420294E7EFE00F1A184 /* Base */,
 				5A11CA6F292C092700330503 /* Router */,
 				5A11CA69292BF94000330503 /* WebView */,
 				5A11CA68292BF77B00330503 /* Main */,
@@ -165,6 +176,7 @@
 			children = (
 				5A0F0B0D2928CFEE0072E1EF /* ViewController.swift */,
 				5A0F0B0F2928CFEE0072E1EF /* Main.storyboard */,
+				5ADCC41E294E7ED200F1A184 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -173,8 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				5A11CA75292C0EAE00330503 /* WebViewParameters.swift */,
-				5A11CA6A292BF98300330503 /* WebViewController.storyboard */,
 				5A11CA6D292BF9D500330503 /* WebViewController.swift */,
+				5ADCC41C294E6A6300F1A184 /* WebViewView.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -202,6 +214,17 @@
 				5AD01F52292900D400B1CC4A /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5ADCC420294E7EFE00F1A184 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCC421294E7F1B00F1A184 /* BaseView.swift */,
+				5ADCC423294E81EE00F1A184 /* Errors.swift */,
+				5ADCC425294E84D000F1A184 /* BaseController.swift */,
+				5ADCC427294E916300F1A184 /* BaseParameters.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +333,6 @@
 			files = (
 				5A0F0B162928CFEF0072E1EF /* LaunchScreen.storyboard in Resources */,
 				5A0F0B132928CFEF0072E1EF /* Assets.xcassets in Resources */,
-				5A11CA6B292BF98300330503 /* WebViewController.storyboard in Resources */,
 				5A0F0B112928CFEE0072E1EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,12 +358,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ADCC41D294E6A6300F1A184 /* WebViewView.swift in Sources */,
+				5ADCC41F294E7ED200F1A184 /* MainView.swift in Sources */,
 				5A11CA6E292BF9D500330503 /* WebViewController.swift in Sources */,
 				5A0F0B0E2928CFEE0072E1EF /* ViewController.swift in Sources */,
 				5A11CA76292C0EAE00330503 /* WebViewParameters.swift in Sources */,
 				5A11CA71292C093000330503 /* Router.swift in Sources */,
+				5ADCC428294E916300F1A184 /* BaseParameters.swift in Sources */,
 				5A0F0B0A2928CFEE0072E1EF /* AppDelegate.swift in Sources */,
+				5ADCC424294E81EE00F1A184 /* Errors.swift in Sources */,
+				5ADCC422294E7F1B00F1A184 /* BaseView.swift in Sources */,
 				5A0F0B0C2928CFEE0072E1EF /* SceneDelegate.swift in Sources */,
+				5ADCC426294E84D000F1A184 /* BaseController.swift in Sources */,
 				5A11CA73292C0E4400330503 /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

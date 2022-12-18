@@ -15,17 +15,21 @@ protocol MainRouter {
 
 extension Router: MainRouter {
     
-    //MARK: - Private
-    private func createController(name: String) -> UIViewController {
-        let storyBoard = UIStoryboard(name: name, bundle: nil)
-        return storyBoard.instantiateViewController(withIdentifier: name)
-    }
-     
     //MARK: - Public
     func showWebView(viewController: UIViewController, params: WebViewParameters) {
-        let webVc = createController(name: "WebViewController") as! WebViewController
-        webVc.params = params
-        viewController.navigationController?.pushViewController(webVc, animated: true)
+        let bounds = UIScreen.main.bounds
+        let topPadding = 50.0
+        let bottoMpadding = 10.0
+        let webViewView = WebViewView( frame: CGRect(
+                x: 0,
+                y: topPadding,
+                width: bounds.width,
+                height: bounds.height - bottoMpadding - topPadding
+            ))
+        
+        let webViewController = WebViewController(view: webViewView, parameters: params)
+        
+        viewController.navigationController?.pushViewController(webViewController, animated: true)
     }
     
 }
