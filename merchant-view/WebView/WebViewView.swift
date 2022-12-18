@@ -14,11 +14,33 @@ protocol WebViewViewProtocol : BaseViewProtocol {
 
 class WebViewView : BaseView, WebViewViewProtocol {
     
-    var webView: WKWebView?
+    let webView: WKWebView
+    let loaderLabel: UILabel
+    
+    override init(frame: CGRect) {
+        webView = WKWebView()
+        loaderLabel = UILabel()
+        super.init(frame: frame)
+    }
     
     override func initialize() {
-        webView = WKWebView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
-        self.addSubview(webView!)
+        webView.frame = frame
+        //addSubview(webView)
+        
+        loaderLabel.frame = CGRect(x: 0, y: 250, width: frame.width, height: 200)
+        loaderLabel.font = UIFont.boldSystemFont(ofSize: 30.0)
+        loaderLabel.textAlignment = .center
+    }
+    
+    func setLoading(percent: Int) {
+        if percent == 100 {
+            loaderLabel.removeFromSuperview()
+            addSubview(webView)
+        } else {
+            loaderLabel.text = "\(percent)%"
+            webView.removeFromSuperview()
+            addSubview(loaderLabel)
+        }
     }
     
 }

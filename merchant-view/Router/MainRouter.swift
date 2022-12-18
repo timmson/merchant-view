@@ -29,7 +29,7 @@ extension Router: MainRouter {
                 height: bounds.height - bottoMpadding - topPadding
             ))
         
-        let params = MainParameters()
+        let params = MainParameters(defualURL: "https://yandex.ru")
 
         let mainController = MainController(view: view, parameters: params, router: self)
         

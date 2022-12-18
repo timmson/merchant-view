@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  merchant-view
+
+  Created by Artem Krotov on 18.12.2022.
+  
+*/
+
+
+LS.MerchantView.Main.Label = "Введить адрес";
+LS.MerchantView.Main.Button = "Открыть";

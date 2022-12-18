@@ -20,31 +20,34 @@ class MainView: BaseView, MainViewProtocol {
     weak var controller: MainController?
     
     override init(frame: CGRect) {
-        label = UILabel(frame: CGRect(x: 0, y: 200, width: frame.width, height: 25))
-        textField = UITextView(frame: CGRect(x: 50, y: 275, width: frame.width - 100, height: 100))
+        label = UILabel()
+        textField = UITextView()
         button = UIButton(type: .system)
-        button.frame = CGRect(x: 50, y: 400, width: frame.width - 100, height: 100)
         super.init(frame: frame)
     }
     
     override func initialize() {
-        label.text = "Enter URL"
-        label.font = label.font.withSize(20.0)
+        label.frame = CGRect(x: 0, y: 200, width: frame.width, height: 25)
+        label.text = "LS.MerchantView.Main.Label".localize()
+        label.font = UIFont.boldSystemFont(ofSize: 24.0)
         label.textAlignment = .center
         addSubview(label)
         
-        textField.text = "https://yandex.ru"
+        textField.frame = CGRect(x: 20, y: 250, width: frame.width - 40, height: 200)
+        textField.text = controller?.parameters.defualURL
         textField.layer.borderWidth = 1
-        textField.font = label.font
+        textField.font = UIFont.systemFont(ofSize: 20.0)
+        textField.layer.cornerRadius = 5.0
         addSubview(textField)
         
-        button.addTarget(self, action: #selector(didTapOpenButton(_:)), for: .touchUpInside)
-        button.setTitle("Go", for: .normal)
+        button.frame = CGRect(x: 100, y: 475, width: frame.width - 200, height: 100)
+        button.setTitle("LS.MerchantView.Main.Button".localize(), for: .normal)
+        button.backgroundColor = UIColor(named: "AppColor")
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24.0)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.setTitleColor(UIColor.blue, for: .selected)
+        button.layer.cornerRadius = 10.0
         addSubview(button)
-    }
-    
-    @objc func didTapOpenButton(_ sender: UIButton) {
-        controller?.didTapOpenButton(sender: sender)
     }
     
 }

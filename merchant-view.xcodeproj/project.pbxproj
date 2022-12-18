@@ -28,6 +28,9 @@
 		5ADCC428294E916300F1A184 /* BaseParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC427294E916300F1A184 /* BaseParameters.swift */; };
 		5ADCC42A294E96D400F1A184 /* MainParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC429294E96D400F1A184 /* MainParameters.swift */; };
 		5ADCC42E294EA65100F1A184 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC42D294EA65100F1A184 /* BasePresenter.swift */; };
+		5ADCC430294F227F00F1A184 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5ADCC42F294F227F00F1A184 /* Localizable.strings */; };
+		5ADCC433294F24B200F1A184 /* String+localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC432294F24B200F1A184 /* String+localize.swift */; };
+		5ADCC435294F329400F1A184 /* WKWebView+loadURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCC434294F329400F1A184 /* WKWebView+loadURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		5ADCC427294E916300F1A184 /* BaseParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParameters.swift; sourceTree = "<group>"; };
 		5ADCC429294E96D400F1A184 /* MainParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainParameters.swift; sourceTree = "<group>"; };
 		5ADCC42D294EA65100F1A184 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		5ADCC42F294F227F00F1A184 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		5ADCC432294F24B200F1A184 /* String+localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localize.swift"; sourceTree = "<group>"; };
+		5ADCC434294F329400F1A184 /* WKWebView+loadURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+loadURL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 		5A0F0B082928CFEE0072E1EF /* merchant-view */ = {
 			isa = PBXGroup;
 			children = (
+				5ADCC431294F247800F1A184 /* Extensions */,
 				5ADCC420294E7EFE00F1A184 /* Base */,
 				5A11CA6F292C092700330503 /* Router */,
 				5A11CA69292BF94000330503 /* WebView */,
@@ -169,6 +176,7 @@
 				5A0F0B122928CFEF0072E1EF /* Assets.xcassets */,
 				5A0F0B142928CFEF0072E1EF /* LaunchScreen.storyboard */,
 				5A0F0B172928CFEF0072E1EF /* Info.plist */,
+				5ADCC42F294F227F00F1A184 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -228,6 +236,15 @@
 				5ADCC42D294EA65100F1A184 /* BasePresenter.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		5ADCC431294F247800F1A184 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCC432294F24B200F1A184 /* String+localize.swift */,
+				5ADCC434294F329400F1A184 /* WKWebView+loadURL.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A0F0B162928CFEF0072E1EF /* LaunchScreen.storyboard in Resources */,
+				5ADCC430294F227F00F1A184 /* Localizable.strings in Resources */,
 				5A0F0B132928CFEF0072E1EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +382,9 @@
 				5ADCC42E294EA65100F1A184 /* BasePresenter.swift in Sources */,
 				5ADCC41F294E7ED200F1A184 /* MainView.swift in Sources */,
 				5ADCC42A294E96D400F1A184 /* MainParameters.swift in Sources */,
+				5ADCC435294F329400F1A184 /* WKWebView+loadURL.swift in Sources */,
 				5A11CA6E292BF9D500330503 /* WebViewController.swift in Sources */,
+				5ADCC433294F24B200F1A184 /* String+localize.swift in Sources */,
 				5A0F0B0E2928CFEE0072E1EF /* MainController.swift in Sources */,
 				5A11CA76292C0EAE00330503 /* WebViewParameters.swift in Sources */,
 				5A11CA71292C093000330503 /* Router.swift in Sources */,

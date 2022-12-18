@@ -8,5 +8,7 @@
 import Foundation
 
 struct WebViewParameters : BaseParameters {
-    let url: String
+    
+    let url: NSURL
+    
 }

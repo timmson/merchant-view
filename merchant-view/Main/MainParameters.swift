@@ -9,4 +9,6 @@ import Foundation
 
 struct MainParameters : BaseParameters {
     
+    let defualURL : String
+    
 }
