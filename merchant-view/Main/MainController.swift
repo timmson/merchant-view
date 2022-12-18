@@ -15,12 +15,21 @@ class MainController: BaseController<MainView, MainParameters> {
         
         self.view.backgroundColor = .white
         self.view.addSubview(mainView)
+        
+        mainView.button.addTarget(self, action: #selector(didTapOpenButton(_:)), for: .touchUpInside)
     }
     
-    func didTapOpenButton(sender: UIButton) {
-        let params: WebViewParameters = WebViewParameters(url: mainView.textField.text)
-        router.showWebView(viewController: self, params: params)
+    @objc func didTapOpenButton(_ sender: UIButton) {
+        mainView.textField.layer.borderColor = UIColor.systemRed.cgColor
+        
+        if let url = NSURL(string: mainView.textField.text) {
+            if (url.scheme == "http" || url.scheme == "https") {
+                let params: WebViewParameters = WebViewParameters(url: url)
+                router.showWebView(viewController: self, params: params)
+                mainView.textField.layer.borderColor = UIColor.black.cgColor
+            }
+        }
     }
-
+    
 }
 

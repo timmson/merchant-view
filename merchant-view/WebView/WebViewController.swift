@@ -15,14 +15,17 @@ class WebViewController: BaseController<WebViewView, WebViewParameters> {
         
         super.initView()
         
-        guard let url = URL(string: parameters.url) else {return}
-        let request = URLRequest(url: url)
+        mainView.webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
+        mainView.webView.loadURL(nURL: parameters.url)
         
-        guard let webView = mainView.webView else {return}
-        webView.load(request)
-
         self.view.backgroundColor = .white
         self.view.addSubview(mainView)
     }
     
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "estimatedProgress" {
+            mainView.setLoading(percent: Int(Float(mainView.webView.estimatedProgress)  * 100))
+            
+        }
+    }
 }
