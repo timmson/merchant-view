@@ -35,6 +35,7 @@ class MainView: BaseView, MainViewProtocol {
         
         textField.frame = CGRect(x: 20, y: 250, width: frame.width - 40, height: 200)
         textField.text = controller?.parameters.defualURL
+        textField.autocorrectionType = .no
         textField.layer.borderWidth = 1
         textField.font = UIFont.systemFont(ofSize: 20.0)
         textField.layer.cornerRadius = 5.0

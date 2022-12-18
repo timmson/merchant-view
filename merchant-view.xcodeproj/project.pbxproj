@@ -563,6 +563,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T454DAHNC5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "merchant-view/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Merhcant View";
@@ -591,6 +592,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T454DAHNC5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "merchant-view/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Merhcant View";
