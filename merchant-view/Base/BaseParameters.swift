@@ -10,3 +10,7 @@ import Foundation
 protocol BaseParametersProtocol {
     
 }
+
+protocol BaseParameters : BaseParametersProtocol {
+    
+}

@@ -17,10 +17,12 @@ class BaseController<V : BaseViewProtocol, P : BaseParametersProtocol> : UIViewC
     
     let mainView: V
     let parameters: P
+    let router: Router
     
-    init(view: V, parameters: P) {
+    init(view: V, parameters: P, router: Router) {
         self.mainView = view
         self.parameters = parameters
+        self.router = router
         super.init(nibName: nil, bundle: nil)
     }
     
