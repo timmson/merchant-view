@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct WebViewParameters {
+struct WebViewParameters : BaseParameters {
     let url: String
 }

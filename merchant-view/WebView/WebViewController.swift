@@ -8,21 +8,21 @@
 import UIKit
 import WebKit
 
-class WebViewController : UIViewController {
-    
-    //MARK: Outlets
-    @IBOutlet weak var webView: WKWebView!
-    
-    //MARK: private
-    var params: WebViewParameters?
-    let defaultParams = WebViewParameters(url: "https://ya.ru")
+class WebViewController: BaseController<WebViewView, WebViewParameters> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let url = URL(string: (params ?? defaultParams).url) else {return}
+        super.initView()
+        
+        guard let url = URL(string: parameters.url) else {return}
         let request = URLRequest(url: url)
+        
+        guard let webView = mainView.webView else {return}
         webView.load(request)
+
+        self.view.backgroundColor = .white
+        self.view.addSubview(mainView)
     }
     
 }
